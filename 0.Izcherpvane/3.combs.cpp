@@ -28,6 +28,7 @@
 */
 
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 int n, k, a[16];

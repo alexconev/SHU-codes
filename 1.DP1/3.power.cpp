@@ -39,7 +39,7 @@ int main(){
 
 	for(int i=0;i<1000000;i++){
 		res = power2(x,y);  // O(y)
-		//res = pow(x,y);   // O(log(y))
+		//res = pow(x,y);   //
 		//res = power(x,y); // O(log(y))
 	}
 
