@@ -61,8 +61,8 @@ int solve(int year, int left, int right){
 	if(dyn[year][left][right] != 0)
 		return dyn[year][left][right];
 
-	int winLeft = recurse (year + 1, left - 1, right) + year * price[left];
-	int winRight = recurse (year + 1, left, right - 1) + year * price[right];
+	int winLeft = solve (year + 1, left + 1, right) + year * price[left];
+	int winRight = solve (year + 1, left, right - 1) + year * price[right];
 
 	return dyn[year][left][right] = max(winLeft, winRight);
 }
